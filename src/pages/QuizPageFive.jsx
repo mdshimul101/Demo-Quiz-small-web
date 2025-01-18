@@ -86,7 +86,7 @@ const QuizPageFive = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-between w-full max-w-md">
+        <div className="flex justify-end gap-3 w-full max-w-md">
           {/* Previous Button */}
           <button disabled={questionId === "one"}>
             <Link
@@ -103,7 +103,7 @@ const QuizPageFive = () => {
               to="/quiz-result"
               className="btn btn-primary px-6 py-2 rounded-md"
             >
-              Next →
+              See Result
             </Link>
           </button>
         </div>

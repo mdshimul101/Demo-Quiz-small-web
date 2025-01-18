@@ -86,7 +86,7 @@ const QuizPageFour = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-between w-full max-w-md">
+        <div className="flex justify-end gap-3 w-full max-w-md">
           {/* Previous Button */}
           <button disabled={questionId === "one"}>
             <Link
