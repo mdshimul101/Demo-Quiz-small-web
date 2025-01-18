@@ -15,8 +15,13 @@ export const QuizProvider = ({ children }) => {
     }));
   };
 
+  // Function to reset all answers
+  const resetAnswers = () => {
+    setAnswers({});
+  };
+
   return (
-    <QuizContext.Provider value={{ answers, updateAnswer }}>
+    <QuizContext.Provider value={{ answers, updateAnswer,resetAnswers}}>
       {children}
     </QuizContext.Provider>
   );
